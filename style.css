@@ -1,0 +1,99 @@
+body {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 90%);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.5rem;
+  color: hsl(0, 0%, 25%);
+}
+
+.box {
+  width: auto;
+  background-color: white;
+  border: 5px solid;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 2em;
+}
+
+.display {
+  font-size: 6rem;
+  font-weight: bolder;
+  font-family: monospace;
+  color: hsl(0, 0%, 30%);
+  text-shadow: 2px 2px 2px hsla(0, 0%, 0%, 0.275);
+  margin-bottom: 25px;
+}
+
+button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 5px;
+  min-width: 125px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+#start {
+  background-color: hsl(115, 100%, 40%);
+}
+
+#start:hover {
+  background-color: hsl(115, 100%, 30%);
+  transform: translateX(-10%);
+}
+
+#stop {
+  background-color: hsl(0, 100%, 50%);
+}
+
+#stop:hover {
+  background-color: hsl(0, 100%, 40%);
+  transform: translateY(-20%);
+}
+
+#reset {
+  background-color: hsl(209, 100%, 60%);
+}
+
+#reset:hover {
+  background-color: hsl(209, 100%, 50%);
+  transform: translateX(10%);
+}
+
+@media screen and (width<=760px) {
+  .box {
+    padding: 1em;
+  }
+  .display {
+    font-size: 2rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 25%);
+  }
+  @media screen and (width <=350px) {
+    .box {
+      padding: 1em 0;
+      width: 100%;
+      margin-left: -0.25em;
+    }
+  }
+}
